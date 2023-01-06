@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h4>Currency Converter</h4>
+      <div class="box">
+        <div class="content">
+          <div class="from">
+            <h5>From</h5>
+            <div class="flag-icon">
+              <img src="https://flagcdn.com/16x12/fr.png" />
+            </div>
+            <select>
+              <!-- <option>US</option>
+                        <option>US</option>
+                        <option>US</option> -->
+            </select>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="0" />
+          </div>
+        </div>
+        <div class="currency-swap">
+          <i class="fa-solid fa-rotate"></i>
+        </div>
+        <div class="content">
+          <div class="to">
+            <h5>To</h5>
+            <div class="flag-icon">
+              <img src="https://flagcdn.com/16x12/mu.png" />
+            </div>
+            <select>
+              <!-- <option>US</option>
+                        <option>US</option>
+                        <option>US</option> -->
+            </select>
+          </div>
+          <div class="output-box">
+            <input type="text" placeholder="0" disabled />
+          </div>
+        </div>
+      </div>
+
+      <button>Convert</button>
+    </div>
+
+    <script src="countryList.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
